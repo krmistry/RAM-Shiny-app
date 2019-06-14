@@ -1,3 +1,5 @@
+# **** Includes tab for taxonomy group
+
 # Interactive elements: 
 # - Region data selection 
 # - slider with animation for years

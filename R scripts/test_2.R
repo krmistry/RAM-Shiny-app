@@ -1,3 +1,5 @@
+# ******Includes Shiny modules
+
 # Interactive elements: 
 # - Region data selection 
 # - slider with animation for years
@@ -15,6 +17,7 @@ library(dplyr)
 library(httr) 
 library(shinyBS)
 library(stringi)
+library(here)
 
 #---------------- Functions ----------------------------
 
@@ -105,8 +108,8 @@ custom_color_fun <- function(split_data,
 }
 
 #------------------- Load Modules, Data and Variables -----------------------
-source("yearSlider_module.R")
-source("sizeDropdown_module.R")
+source(here::here("/R scripts/Shiny modules/yearSlider_module.R"))
+source(here::here("/R scripts/Shiny modules/sizeDropdown_module.R"))
 
 myFile <- "https://raw.githubusercontent.com/krmistry/dynamic_kobe/master/dss.csv"
 data <- read.csv(myFile)
